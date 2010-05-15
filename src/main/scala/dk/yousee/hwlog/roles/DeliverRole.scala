@@ -10,7 +10,7 @@ import dk.yousee.hwlog.model.{Hardware, Location}
  * To change this template use File | Settings | File Templates.
  */
 
-trait Deliverer {  self: Location =>
+trait DeliverRole {  self: Location =>
 
   def handOver(hardware : Hardware) {
       println(this.loc + " handed over hardware: " + hardware.serialnumber)

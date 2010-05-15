@@ -2,7 +2,7 @@ package dk.yousee.hwlog.context
 
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.ShouldMatchers
-import dk.yousee.hwlog.contexts.WarehouseToSalesagent
+import dk.yousee.hwlog.contexts.{CarrierToSalesagent, WarehouseToCarrier}
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,8 +14,18 @@ import dk.yousee.hwlog.contexts.WarehouseToSalesagent
 
 class TestWarehouseToSalesagent extends FlatSpec with ShouldMatchers {
 
-  "WarehouseToSalesagent" should "send handover hardware to the carrier" in {
-    val  uc = new WarehouseToSalesagent("ABC-123", "T5555")
-    uc.send
+  val serialnumber = "ABC-123"
+  val salesagentCode = "T3456"
+
+
+  "Warehouse" should "handover hardware to the carrier" in {
+    val  uc = new WarehouseToCarrier(serialnumber)
+    uc.handOver 
+  }
+
+
+  "Salesagent" should "receive hardware from carrier" in {
+       val uc = new CarrierToSalesagent(serialnumber, salesagentCode)
+       uc.handOver
   }
 }
