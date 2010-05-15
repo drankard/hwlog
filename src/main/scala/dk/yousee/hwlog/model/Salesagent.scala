@@ -1,5 +1,7 @@
 package dk.yousee.hwlog.roles
 
+import dk.yousee.hwlog.model.Location
+
 /**
  * Created by IntelliJ IDEA.
  * User: m14758
@@ -8,4 +10,5 @@ package dk.yousee.hwlog.roles
  * To change this template use File | Settings | File Templates.
  */
 
-class Salesagent
+class Salesagent(salesagentCode : String ) extends Location(salesagentCode: String) {
+}

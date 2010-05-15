@@ -1,5 +1,7 @@
 package dk.yousee.hwlog.roles
 
+import dk.yousee.hwlog.model.{Hardware, Location}
+
 /**
  * Created by IntelliJ IDEA.
  * User: m14758
@@ -8,4 +10,10 @@ package dk.yousee.hwlog.roles
  * To change this template use File | Settings | File Templates.
  */
 
-class Deliverer
+trait Deliverer {  self: Location =>
+
+  def handOver(hardware : Hardware) {
+      println(this.loc + " handed over hardware: " + hardware.serialnumber)
+  }
+
+}

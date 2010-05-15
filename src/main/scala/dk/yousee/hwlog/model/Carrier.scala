@@ -10,8 +10,5 @@ import dk.yousee.hwlog.model.Location
  * To change this template use File | Settings | File Templates.
  */
 
-class Carrier extends Location {
-  def this() = {
-    this("CARRIER")
-  }
+class Carrier extends Location("CARRIER") {
 }

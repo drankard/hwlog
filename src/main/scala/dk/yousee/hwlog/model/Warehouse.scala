@@ -10,9 +10,6 @@ import dk.yousee.hwlog.model.{Location, Hardware}
  * To change this template use File | Settings | File Templates.
  */
 
-class Warehouse extends Location  {
-  def this() = {
-    this("DISTRIBU")
-  }
+class Warehouse extends Location("DISTRIBU")  {
 
 }

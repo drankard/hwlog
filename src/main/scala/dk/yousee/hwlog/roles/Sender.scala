@@ -1,6 +1,6 @@
 package dk.yousee.hwlog.roles
 
-import dk.yousee.hwlog.model.Hardware
+import dk.yousee.hwlog.model.{Location, Hardware}
 
 /**
  * Created by IntelliJ IDEA.
@@ -10,9 +10,9 @@ import dk.yousee.hwlog.model.Hardware
  * To change this template use File | Settings | File Templates.
  */
 
-trait Sender {
+trait Sender {  self: Location =>
 
   def send(hardware: Hardware) {
-    println("Sending hardware: " + hardware.serialnumber)
+    println(this.loc + "sending hardware: " + hardware.serialnumber)
   }
 }
