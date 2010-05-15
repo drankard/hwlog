@@ -1,0 +1,7 @@
+#External Dependencies
+#Sat May 15 11:26:24 CEST 2010
+/home/m14758/projects/hwlog/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.3/sbt_2.7.7-0.7.3.jar=HwlogProject.scala
+/home/m14758/projects/hwlog/project/plugins/target/scala_2.7.7/plugin-classes/IdeaPlugin.class=HwlogProject.scala
+/home/m14758/projects/hwlog/project/plugins/target/scala_2.7.7/plugin-classes/IdeaPlugin$class.class=HwlogProject.scala
+/home/m14758/projects/hwlog/project/boot/scala-2.7.7/lib/scala-library.jar=HwlogProject.scala
+/home/m14758/projects/hwlog/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.3/ivy_2.7.7-0.7.3.jar=HwlogProject.scala
